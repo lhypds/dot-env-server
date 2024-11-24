@@ -5,6 +5,9 @@ Dot Env Server
 Configure the dot env file remotely.
 This project is a simple Node.js server that interacts with a `.env` file. It allows you to list, update, and retrieve environment variables through API endpoints.
 
+![image](https://github.com/user-attachments/assets/7d11bd42-56f7-4c56-8a0d-97212edba00e)
+
+
 
 Dependencies
 ------------
