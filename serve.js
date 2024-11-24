@@ -6,7 +6,13 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const DOT_ENV_FILE_PATH = process.env.DOT_ENV_FILE_PATH;
-const BLOCKED_KEYS = process.env.BLOCKED_KEYS ? process.env.BLOCKED_KEYS.split(",") : [];
+const BLOCKED_KEYS = process.env.BLOCKED_KEYS
+  ? process.env.BLOCKED_KEYS.split(",")
+  : [];
+const PROJECT_NAME = process.env.PROJECT_NAME || "Dot Env Server";
+
+// Serve static files
+app.use(express.static("public"));
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -73,5 +79,5 @@ app.get("/get", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on \`http://localhost:${PORT}\``);
 });

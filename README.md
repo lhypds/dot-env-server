@@ -27,11 +27,13 @@ Create a `.env` file in the root directory of the project to set up the followin
 PORT=4003
 DOT_ENV_FILE_PATH=./target.env
 BLOCKED_KEYS=AAA,BBB,API_KEY
+PROJECT_NAME='Your Project Name'
 ```
 
 - PORT: The port number on which the server will listen.
 - DOT_ENV_FILE_PATH: The file path to the target `.env` file that the server will interact with.
 - BLOCKED_KEYS: A comma-separated list of keys to block from being exposed or updated.
+- PROJECT_NAME: for the web configuration page title.
 
 
 Running the Server

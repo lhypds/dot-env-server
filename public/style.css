@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+}
+
+#env-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.env-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
